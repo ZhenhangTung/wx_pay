@@ -1,6 +1,7 @@
 require 'wx_pay/result'
 require 'wx_pay/sign'
 require 'wx_pay/service'
+require 'wx_pay/constants'
 require 'openssl'
 
 module WxPay
