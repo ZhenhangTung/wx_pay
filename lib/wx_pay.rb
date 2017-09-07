@@ -2,6 +2,7 @@ require 'wx_pay/result'
 require 'wx_pay/sign'
 require 'wx_pay/service'
 require 'wx_pay/constants'
+require 'wx_pay/version'
 require 'openssl'
 
 module WxPay
@@ -11,7 +12,7 @@ module WxPay
 
   class<< self
     attr_accessor :appid, :mch_id, :key, :appsecret, :extra_rest_client_options, :debug_mode
-    attr_accessor :sandbox_mode, :sandbox_key, :sandbox_mch_id
+    attr_accessor :sandbox_mode, :sandbox_key
     attr_reader :apiclient_cert, :apiclient_key
 
     def set_apiclient_by_pkcs12(str, pass)
